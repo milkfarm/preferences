@@ -612,5 +612,6 @@ module Preferences
 end
 
 ActiveRecord::Base.class_eval do
+  attr_accessible :name, :group_id, :group_type
   extend Preferences::MacroMethods
 end
